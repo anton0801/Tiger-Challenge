@@ -1,0 +1,621 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EE32BDF52C18810700FC1D98 /* Tiger_ChallengeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE32BDF42C18810700FC1D98 /* Tiger_ChallengeApp.swift */; };
+		EE32BDF72C18810700FC1D98 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE32BDF62C18810700FC1D98 /* ContentView.swift */; };
+		EE32BDF92C18810900FC1D98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE32BDF82C18810900FC1D98 /* Assets.xcassets */; };
+		EE32BDFC2C18810900FC1D98 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE32BDFB2C18810900FC1D98 /* Preview Assets.xcassets */; };
+		EE32BE092C18850100FC1D98 /* LevelModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE32BE082C18850100FC1D98 /* LevelModel.swift */; };
+		EE32BE0B2C18917400FC1D98 /* TL Sans Serif Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EE32BE0A2C18917400FC1D98 /* TL Sans Serif Bold.ttf */; };
+		EE32BE0F2C18919D00FC1D98 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE32BE0E2C18919D00FC1D98 /* String.swift */; };
+		EE32BE142C18AB4C00FC1D98 /* MenuEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE32BE132C18AB4C00FC1D98 /* MenuEvent.swift */; };
+		EE32BE162C18AB6C00FC1D98 /* MenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE32BE152C18AB6C00FC1D98 /* MenuViewModel.swift */; };
+		EE32BE182C18ABA400FC1D98 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE32BE172C18ABA400FC1D98 /* MenuView.swift */; };
+		EE32BE1A2C18B04B00FC1D98 /* LevelsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE32BE192C18B04B00FC1D98 /* LevelsView.swift */; };
+		EE32BE1C2C18BAFB00FC1D98 /* LevelViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE32BE1B2C18BAFB00FC1D98 /* LevelViewModel.swift */; };
+		EE32BE1F2C18C29200FC1D98 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE32BE1E2C18C29200FC1D98 /* SettingsViewModel.swift */; };
+		EE32BE222C18C32800FC1D98 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE32BE212C18C32800FC1D98 /* SettingsView.swift */; };
+		EE32BE262C18D25700FC1D98 /* MainGameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE32BE252C18D25700FC1D98 /* MainGameScene.swift */; };
+		EE32BE2A2C18D62400FC1D98 /* InfoGameRulesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE32BE292C18D62400FC1D98 /* InfoGameRulesView.swift */; };
+		EE32BE2C2C19DA0E00FC1D98 /* MainGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE32BE2B2C19DA0E00FC1D98 /* MainGameView.swift */; };
+		EE32BE312C19DA3700FC1D98 /* MainGameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE32BE302C19DA3700FC1D98 /* MainGameViewModel.swift */; };
+		EE32BE332C19DCEF00FC1D98 /* WinGameResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE32BE322C19DCEF00FC1D98 /* WinGameResultView.swift */; };
+		EE32BE362C19DF4100FC1D98 /* StoreGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE32BE352C19DF4100FC1D98 /* StoreGameView.swift */; };
+		EE32BE392C19DF6700FC1D98 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE32BE382C19DF6700FC1D98 /* UserManager.swift */; };
+		EE32BE3B2C19DFB000FC1D98 /* LoseGameResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE32BE3A2C19DFB000FC1D98 /* LoseGameResultView.swift */; };
+		EE32BE3D2C19E12D00FC1D98 /* PauseGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE32BE3C2C19E12D00FC1D98 /* PauseGameView.swift */; };
+		EE32BE402C19E43E00FC1D98 /* StoreItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE32BE3F2C19E43E00FC1D98 /* StoreItem.swift */; };
+		EE32BE432C19E64B00FC1D98 /* StoreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE32BE422C19E64B00FC1D98 /* StoreViewModel.swift */; };
+		EE32BE452C19ECB000FC1D98 /* DailyGameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE32BE442C19ECB000FC1D98 /* DailyGameScene.swift */; };
+		EE32BE472C19ECB800FC1D98 /* DailyGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE32BE462C19ECB800FC1D98 /* DailyGameView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EE32BDF12C18810700FC1D98 /* Tiger Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tiger Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE32BDF42C18810700FC1D98 /* Tiger_ChallengeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tiger_ChallengeApp.swift; sourceTree = "<group>"; };
+		EE32BDF62C18810700FC1D98 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EE32BDF82C18810900FC1D98 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EE32BDFB2C18810900FC1D98 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EE32BE082C18850100FC1D98 /* LevelModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelModel.swift; sourceTree = "<group>"; };
+		EE32BE0A2C18917400FC1D98 /* TL Sans Serif Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TL Sans Serif Bold.ttf"; sourceTree = "<group>"; };
+		EE32BE0C2C18917C00FC1D98 /* Tiger-Challenge-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Tiger-Challenge-Info.plist"; sourceTree = SOURCE_ROOT; };
+		EE32BE0E2C18919D00FC1D98 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		EE32BE132C18AB4C00FC1D98 /* MenuEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuEvent.swift; sourceTree = "<group>"; };
+		EE32BE152C18AB6C00FC1D98 /* MenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewModel.swift; sourceTree = "<group>"; };
+		EE32BE172C18ABA400FC1D98 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		EE32BE192C18B04B00FC1D98 /* LevelsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelsView.swift; sourceTree = "<group>"; };
+		EE32BE1B2C18BAFB00FC1D98 /* LevelViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelViewModel.swift; sourceTree = "<group>"; };
+		EE32BE1E2C18C29200FC1D98 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		EE32BE212C18C32800FC1D98 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		EE32BE252C18D25700FC1D98 /* MainGameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainGameScene.swift; sourceTree = "<group>"; };
+		EE32BE292C18D62400FC1D98 /* InfoGameRulesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoGameRulesView.swift; sourceTree = "<group>"; };
+		EE32BE2B2C19DA0E00FC1D98 /* MainGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainGameView.swift; sourceTree = "<group>"; };
+		EE32BE302C19DA3700FC1D98 /* MainGameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainGameViewModel.swift; sourceTree = "<group>"; };
+		EE32BE322C19DCEF00FC1D98 /* WinGameResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinGameResultView.swift; sourceTree = "<group>"; };
+		EE32BE352C19DF4100FC1D98 /* StoreGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreGameView.swift; sourceTree = "<group>"; };
+		EE32BE382C19DF6700FC1D98 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		EE32BE3A2C19DFB000FC1D98 /* LoseGameResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoseGameResultView.swift; sourceTree = "<group>"; };
+		EE32BE3C2C19E12D00FC1D98 /* PauseGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PauseGameView.swift; sourceTree = "<group>"; };
+		EE32BE3F2C19E43E00FC1D98 /* StoreItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreItem.swift; sourceTree = "<group>"; };
+		EE32BE422C19E64B00FC1D98 /* StoreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreViewModel.swift; sourceTree = "<group>"; };
+		EE32BE442C19ECB000FC1D98 /* DailyGameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyGameScene.swift; sourceTree = "<group>"; };
+		EE32BE462C19ECB800FC1D98 /* DailyGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyGameView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EE32BDEE2C18810700FC1D98 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EE32BDE82C18810700FC1D98 = {
+			isa = PBXGroup;
+			children = (
+				EE32BDF32C18810700FC1D98 /* Tiger Challenge */,
+				EE32BDF22C18810700FC1D98 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EE32BDF22C18810700FC1D98 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EE32BDF12C18810700FC1D98 /* Tiger Challenge.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EE32BDF32C18810700FC1D98 /* Tiger Challenge */ = {
+			isa = PBXGroup;
+			children = (
+				EE32BE0D2C18919200FC1D98 /* Ext */,
+				EE32BE0C2C18917C00FC1D98 /* Tiger-Challenge-Info.plist */,
+				EE32BE0A2C18917400FC1D98 /* TL Sans Serif Bold.ttf */,
+				EE32BE042C18849300FC1D98 /* View */,
+				EE32BE032C18848E00FC1D98 /* ViewModel */,
+				EE32BE022C18848900FC1D98 /* Model */,
+				EE32BDF42C18810700FC1D98 /* Tiger_ChallengeApp.swift */,
+				EE32BDF62C18810700FC1D98 /* ContentView.swift */,
+				EE32BDF82C18810900FC1D98 /* Assets.xcassets */,
+				EE32BDFA2C18810900FC1D98 /* Preview Content */,
+			);
+			path = "Tiger Challenge";
+			sourceTree = "<group>";
+		};
+		EE32BDFA2C18810900FC1D98 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				EE32BDFB2C18810900FC1D98 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EE32BE022C18848900FC1D98 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EE32BE3E2C19E43500FC1D98 /* Store */,
+				EE32BE372C19DF5E00FC1D98 /* User */,
+				EE32BE122C18AB3E00FC1D98 /* Menu */,
+				EE32BE052C18849700FC1D98 /* Level */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EE32BE032C18848E00FC1D98 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EE32BE412C19E63C00FC1D98 /* Store */,
+				EE32BE2F2C19DA2E00FC1D98 /* MainGame */,
+				EE32BE1D2C18C28500FC1D98 /* Settings */,
+				EE32BE112C18AB3900FC1D98 /* Menu */,
+				EE32BE062C18849B00FC1D98 /* Level */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		EE32BE042C18849300FC1D98 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EE32BE282C18D60D00FC1D98 /* Info */,
+				EE32BE272C18D52700FC1D98 /* Store */,
+				EE32BE242C18CAAC00FC1D98 /* DailyGame */,
+				EE32BE232C18CA7200FC1D98 /* MainGame */,
+				EE32BE202C18C31500FC1D98 /* Settings */,
+				EE32BE102C18AB2200FC1D98 /* Menu */,
+				EE32BE072C18849F00FC1D98 /* Level */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EE32BE052C18849700FC1D98 /* Level */ = {
+			isa = PBXGroup;
+			children = (
+				EE32BE082C18850100FC1D98 /* LevelModel.swift */,
+			);
+			path = Level;
+			sourceTree = "<group>";
+		};
+		EE32BE062C18849B00FC1D98 /* Level */ = {
+			isa = PBXGroup;
+			children = (
+				EE32BE1B2C18BAFB00FC1D98 /* LevelViewModel.swift */,
+			);
+			path = Level;
+			sourceTree = "<group>";
+		};
+		EE32BE072C18849F00FC1D98 /* Level */ = {
+			isa = PBXGroup;
+			children = (
+				EE32BE192C18B04B00FC1D98 /* LevelsView.swift */,
+			);
+			path = Level;
+			sourceTree = "<group>";
+		};
+		EE32BE0D2C18919200FC1D98 /* Ext */ = {
+			isa = PBXGroup;
+			children = (
+				EE32BE0E2C18919D00FC1D98 /* String.swift */,
+			);
+			path = Ext;
+			sourceTree = "<group>";
+		};
+		EE32BE102C18AB2200FC1D98 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				EE32BE172C18ABA400FC1D98 /* MenuView.swift */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		EE32BE112C18AB3900FC1D98 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				EE32BE152C18AB6C00FC1D98 /* MenuViewModel.swift */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		EE32BE122C18AB3E00FC1D98 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				EE32BE132C18AB4C00FC1D98 /* MenuEvent.swift */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		EE32BE1D2C18C28500FC1D98 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				EE32BE1E2C18C29200FC1D98 /* SettingsViewModel.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		EE32BE202C18C31500FC1D98 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				EE32BE212C18C32800FC1D98 /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		EE32BE232C18CA7200FC1D98 /* MainGame */ = {
+			isa = PBXGroup;
+			children = (
+				EE32BE2D2C19DA1F00FC1D98 /* OtherScreens */,
+				EE32BE252C18D25700FC1D98 /* MainGameScene.swift */,
+				EE32BE2B2C19DA0E00FC1D98 /* MainGameView.swift */,
+			);
+			path = MainGame;
+			sourceTree = "<group>";
+		};
+		EE32BE242C18CAAC00FC1D98 /* DailyGame */ = {
+			isa = PBXGroup;
+			children = (
+				EE32BE442C19ECB000FC1D98 /* DailyGameScene.swift */,
+				EE32BE462C19ECB800FC1D98 /* DailyGameView.swift */,
+			);
+			path = DailyGame;
+			sourceTree = "<group>";
+		};
+		EE32BE272C18D52700FC1D98 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				EE32BE352C19DF4100FC1D98 /* StoreGameView.swift */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		EE32BE282C18D60D00FC1D98 /* Info */ = {
+			isa = PBXGroup;
+			children = (
+				EE32BE292C18D62400FC1D98 /* InfoGameRulesView.swift */,
+			);
+			path = Info;
+			sourceTree = "<group>";
+		};
+		EE32BE2D2C19DA1F00FC1D98 /* OtherScreens */ = {
+			isa = PBXGroup;
+			children = (
+				EE32BE322C19DCEF00FC1D98 /* WinGameResultView.swift */,
+				EE32BE3A2C19DFB000FC1D98 /* LoseGameResultView.swift */,
+				EE32BE3C2C19E12D00FC1D98 /* PauseGameView.swift */,
+			);
+			path = OtherScreens;
+			sourceTree = "<group>";
+		};
+		EE32BE2F2C19DA2E00FC1D98 /* MainGame */ = {
+			isa = PBXGroup;
+			children = (
+				EE32BE302C19DA3700FC1D98 /* MainGameViewModel.swift */,
+			);
+			path = MainGame;
+			sourceTree = "<group>";
+		};
+		EE32BE372C19DF5E00FC1D98 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				EE32BE382C19DF6700FC1D98 /* UserManager.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		EE32BE3E2C19E43500FC1D98 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				EE32BE3F2C19E43E00FC1D98 /* StoreItem.swift */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		EE32BE412C19E63C00FC1D98 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				EE32BE422C19E64B00FC1D98 /* StoreViewModel.swift */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EE32BDF02C18810700FC1D98 /* Tiger Challenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE32BDFF2C18810900FC1D98 /* Build configuration list for PBXNativeTarget "Tiger Challenge" */;
+			buildPhases = (
+				EE32BDED2C18810700FC1D98 /* Sources */,
+				EE32BDEE2C18810700FC1D98 /* Frameworks */,
+				EE32BDEF2C18810700FC1D98 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Tiger Challenge";
+			productName = "Tiger Challenge";
+			productReference = EE32BDF12C18810700FC1D98 /* Tiger Challenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EE32BDE92C18810700FC1D98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1510;
+				LastUpgradeCheck = 1510;
+				TargetAttributes = {
+					EE32BDF02C18810700FC1D98 = {
+						CreatedOnToolsVersion = 15.1;
+					};
+				};
+			};
+			buildConfigurationList = EE32BDEC2C18810700FC1D98 /* Build configuration list for PBXProject "Tiger Challenge" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EE32BDE82C18810700FC1D98;
+			productRefGroup = EE32BDF22C18810700FC1D98 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EE32BDF02C18810700FC1D98 /* Tiger Challenge */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EE32BDEF2C18810700FC1D98 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE32BE0B2C18917400FC1D98 /* TL Sans Serif Bold.ttf in Resources */,
+				EE32BDFC2C18810900FC1D98 /* Preview Assets.xcassets in Resources */,
+				EE32BDF92C18810900FC1D98 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EE32BDED2C18810700FC1D98 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE32BE3B2C19DFB000FC1D98 /* LoseGameResultView.swift in Sources */,
+				EE32BE392C19DF6700FC1D98 /* UserManager.swift in Sources */,
+				EE32BE182C18ABA400FC1D98 /* MenuView.swift in Sources */,
+				EE32BE402C19E43E00FC1D98 /* StoreItem.swift in Sources */,
+				EE32BE312C19DA3700FC1D98 /* MainGameViewModel.swift in Sources */,
+				EE32BE1A2C18B04B00FC1D98 /* LevelsView.swift in Sources */,
+				EE32BE142C18AB4C00FC1D98 /* MenuEvent.swift in Sources */,
+				EE32BE332C19DCEF00FC1D98 /* WinGameResultView.swift in Sources */,
+				EE32BE452C19ECB000FC1D98 /* DailyGameScene.swift in Sources */,
+				EE32BE2C2C19DA0E00FC1D98 /* MainGameView.swift in Sources */,
+				EE32BE262C18D25700FC1D98 /* MainGameScene.swift in Sources */,
+				EE32BE1C2C18BAFB00FC1D98 /* LevelViewModel.swift in Sources */,
+				EE32BE362C19DF4100FC1D98 /* StoreGameView.swift in Sources */,
+				EE32BE092C18850100FC1D98 /* LevelModel.swift in Sources */,
+				EE32BE1F2C18C29200FC1D98 /* SettingsViewModel.swift in Sources */,
+				EE32BE3D2C19E12D00FC1D98 /* PauseGameView.swift in Sources */,
+				EE32BDF72C18810700FC1D98 /* ContentView.swift in Sources */,
+				EE32BE162C18AB6C00FC1D98 /* MenuViewModel.swift in Sources */,
+				EE32BE0F2C18919D00FC1D98 /* String.swift in Sources */,
+				EE32BDF52C18810700FC1D98 /* Tiger_ChallengeApp.swift in Sources */,
+				EE32BE222C18C32800FC1D98 /* SettingsView.swift in Sources */,
+				EE32BE432C19E64B00FC1D98 /* StoreViewModel.swift in Sources */,
+				EE32BE472C19ECB800FC1D98 /* DailyGameView.swift in Sources */,
+				EE32BE2A2C18D62400FC1D98 /* InfoGameRulesView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		EE32BDFD2C18810900FC1D98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EE32BDFE2C18810900FC1D98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EE32BE002C18810900FC1D98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Tiger Challenge/Preview Content\"";
+				DEVELOPMENT_TEAM = 4RSA42DBKQ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Tiger-Challenge-Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gamebig.Tiger-Challenge";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		EE32BE012C18810900FC1D98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Tiger Challenge/Preview Content\"";
+				DEVELOPMENT_TEAM = 4RSA42DBKQ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Tiger-Challenge-Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gamebig.Tiger-Challenge";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EE32BDEC2C18810700FC1D98 /* Build configuration list for PBXProject "Tiger Challenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE32BDFD2C18810900FC1D98 /* Debug */,
+				EE32BDFE2C18810900FC1D98 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE32BDFF2C18810900FC1D98 /* Build configuration list for PBXNativeTarget "Tiger Challenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE32BE002C18810900FC1D98 /* Debug */,
+				EE32BE012C18810900FC1D98 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EE32BDE92C18810700FC1D98 /* Project object */;
+}
